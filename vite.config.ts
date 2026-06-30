@@ -16,12 +16,11 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // IMPORTANT: Change this to your GitHub repository name
-  base: '/GieroAC/',
+  // Required for GitHub Pages
+  base: '/rogie-alysssa/',
 
   plugins: [
     figmaAssetResolver(),
-    // Required for Make
     react(),
     tailwindcss(),
   ],
@@ -32,7 +31,6 @@ export default defineConfig({
     },
   },
 
-  // File types to support raw imports
   assetsInclude: [
     '**/*.svg',
     '**/*.csv',
